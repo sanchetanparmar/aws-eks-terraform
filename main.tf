@@ -15,7 +15,7 @@ provider "aws" {
 # EKS Terraform module
 
 module "eks" {
-  source             = "./modules/eks"
+  source             = "./eks"
   cluster-name       = "${var.cluster-name}"
   k8s-version        = "${var.k8s-version}"
   aws-region         = "${var.aws-region}"
